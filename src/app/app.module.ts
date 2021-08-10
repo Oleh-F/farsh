@@ -12,6 +12,10 @@ import { BurgersDetailsComponent } from './pages/burgers-details/burgers-details
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { BasketComponent } from './pages/basket/basket.component';
+import { DiscountComponent } from './pages/discount/discount.component';
+import { DiscountDetailsComponent } from './pages/discount-details/discount-details.component';
+import { CareerComponent } from './pages/career/career.component';
+import { DeliveryComponent } from './pages/delivery/delivery.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { BasketComponent } from './pages/basket/basket.component';
     BurgersDetailsComponent,
     ProductsComponent,
     ProductDetailsComponent,
-    BasketComponent
+    BasketComponent,
+    DiscountComponent,
+    DiscountDetailsComponent,
+    CareerComponent,
+    DeliveryComponent
   ],
   imports: [
     BrowserModule,
