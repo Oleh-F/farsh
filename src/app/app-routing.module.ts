@@ -14,6 +14,8 @@ import { CareerComponent } from './pages/career/career.component';
 import { DeliveryComponent } from './pages/delivery/delivery.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -28,6 +30,8 @@ const routes: Routes = [
   {path: 'delivary', component: DeliveryComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'privacy', component: PrivacyComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'contact', component: ContactsComponent},
 ];
 
 @NgModule({
