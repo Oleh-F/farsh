@@ -18,11 +18,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'burgers', component: BurgersComponent},
   {path: 'burgers/:name', component: BurgersDetailsComponent},
-  {path: 'produts', component: ProductsComponent},
-  {path: 'produts/:name', component: ProductDetailsComponent},
+  {path: 'products', component: ProductsComponent},
+  {path: 'products/:name', component: ProductDetailsComponent},
   {path: 'basket', component: BasketComponent},
   {path: 'discount', component: DiscountComponent},
   {path: 'discount/:name', component: DiscountDetailsComponent},
