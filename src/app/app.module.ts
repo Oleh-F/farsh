@@ -18,6 +18,8 @@ import { CareerComponent } from './pages/career/career.component';
 import { DeliveryComponent } from './pages/delivery/delivery.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
     CareerComponent,
     DeliveryComponent,
     MenuComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    AboutComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
