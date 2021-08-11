@@ -16,6 +16,8 @@ import { DiscountComponent } from './pages/discount/discount.component';
 import { DiscountDetailsComponent } from './pages/discount-details/discount-details.component';
 import { CareerComponent } from './pages/career/career.component';
 import { DeliveryComponent } from './pages/delivery/delivery.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { DeliveryComponent } from './pages/delivery/delivery.component';
     DiscountComponent,
     DiscountDetailsComponent,
     CareerComponent,
-    DeliveryComponent
+    DeliveryComponent,
+    MenuComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
