@@ -16,6 +16,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { BasketDetailsComponent } from './components/basket-details/basket-details.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'privacy', component: PrivacyComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactsComponent},
+  {path: 'basketDetails', component: BasketDetailsComponent},
 ];
 
 @NgModule({

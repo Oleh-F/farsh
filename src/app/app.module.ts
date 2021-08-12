@@ -20,6 +20,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { BasketDetailsComponent } from './components/basket-details/basket-details.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
     MenuComponent,
     PrivacyComponent,
     AboutComponent,
-    ContactsComponent
+    ContactsComponent,
+    BasketDetailsComponent
   ],
   imports: [
     BrowserModule,
