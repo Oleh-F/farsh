@@ -1,0 +1,106 @@
+.container-about {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    // background-image: url(../src/assets/images/bigIMAGE1.jpg);
+  }
+  
+  .title {
+    width: 70%;
+    margin: 0 auto;
+    background-image: url(/src/assets/images/bigIMAGE1.jpg);
+  }
+    
+  .about-info{
+      width: 70%;
+      margin: 0 auto;
+  }
+  .info-1{
+      height: 750px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .info-text{
+      width: 50%;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+  }
+
+  //////////////////////////////////
+  .detail-info {
+
+    margin: 200px auto;
+    width: 70%;
+  }
+  
+ 
+  .all-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .small-detail-1 {
+    //   border: 1px solid #000;
+      border-right: 1px solid rgb(226, 225, 225); ;
+      padding: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .iconWrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 50px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .onlinePayment {
+    background-color: yellow;
+  }
+  
+  .cashPayment {
+    background-color: yellow;
+  }
+  
+  .courierPayment {
+    background-color: yellow;
+  }
+  
+  /////////////////////////////////
+  .button-career{
+    width: 210px;
+    height: 55px;
+    background-color: yellow;
+    
+  }
+  ////////////////////////////////
+  .delivery-info{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .info-2{
+    width: 500px;
+  }
+  .order-button{
+    width: 210px;
+    height: 55px;
+    background-color: yellow;
+  }
