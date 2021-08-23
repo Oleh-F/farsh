@@ -5,7 +5,7 @@ import { IDiscount } from '../../models/discount/discount.model';
   providedIn: 'root'
 })
 export class DiscountService {
-public arrDiscounts: Array<IDiscount> = [
+private arrDiscounts: Array<IDiscount> = [
   {
     id: 1,
     title: 'ФАРШ НАРАХОВУЄ БОНУСИ ВІД КОЖНОГО ЗАМОВЛЕННЯ',
@@ -24,4 +24,12 @@ public arrDiscounts: Array<IDiscount> = [
   }
 ];
   constructor() { }
+
+  getDiscounts(): Array<IDiscount> {
+    return this.arrDiscounts;
+  }
+
+  addDiscount(discount: IDiscount): void {
+    this.arrDiscounts.push(discount);
+  }
 }

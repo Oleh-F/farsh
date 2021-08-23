@@ -1,0 +1,45 @@
+.container-discount {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover ;
+    background-position: center;
+    background-image: url("https://farsh.in.ua/wp-content/uploads/2020/08/IMG_8865-scaled.jpg");    
+}
+  
+  .title {
+    width: 70%;
+    margin: 100px auto;
+  }
+  .title-text-info{
+    font-size: 2.22rem;
+    font-weight: 800;
+  }
+  .container-discount-wrapper{
+    height: 480px;
+  background-color: rgba(0, 0, 0, 0.2);
+  }
+    .sub-title-1{
+      font-size: 1rem;
+    font-weight: 500;
+    color: #FFDE1A ;
+    }
+    .sub-title-2{
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white ;
+      text-transform: uppercase;
+    }
+    // /////////////////
+    .spacer100{
+        height: 100px;
+    }
+    //////////////////
+    .card{
+        border: none;
+    }
+    .card-title{
+      font-weight: 800;
+    }

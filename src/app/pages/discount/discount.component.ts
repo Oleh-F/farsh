@@ -15,6 +15,11 @@ export class DiscountComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.loadDiscounts();
   }
-
+loadDiscounts(): void {
+  this.userDiscounts = this.discountService.getDiscounts();
+  console.log(this.userDiscounts);
+  
+}
 }
