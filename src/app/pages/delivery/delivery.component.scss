@@ -4,20 +4,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: gray;
-  // background-image: url(../src/assets/images/bigIMAGE1.jpg);
+  background-size: cover ;
+    background-position: center;
+    background-image: url("https://farsh.in.ua/wp-content/uploads/2020/08/IMG_9061-scaled.jpg");
+  }
+.container-about-wrapper{
+  height: 480px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 .title {
   width: 70%;
-  margin: 0 auto;
+  margin: 100px auto;
   background-image: url(/src/assets/images/bigIMAGE1.jpg);
 }
-
+.sub-title-1{
+  font-size: 1rem;
+    font-weight: 500;
+    color: yellow;
+}
 .title-1 {
   font-size: 40px;
   margin-top: 100px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .delivery-info {
@@ -34,6 +42,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.zone-time{
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .zone-icon {
@@ -54,17 +66,28 @@
 
 .greenZone {
   background-color: #27AE60;
+  display: flex;
+  justify-content: center;
+  line-height: 45px;
 }
 
 .yellowZone {
   background-color: #FFDE1A;
+  display: flex;
+  justify-content: center;
+  line-height: 45px;
 }
 
 .redZone {
   background-color: #FF0000;
+  display: flex;
+  justify-content: center;
+  line-height: 45px;
 }
 
 .title-info {
+  font-size: 2rem;
+  font-weight: 800;
   margin-bottom: 40px;
 }
 
@@ -108,21 +131,32 @@
   justify-content: center;
 }
 .iconPayment {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border-bottom-left-radius: 37px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
 }
 
 .onlinePayment {
-  background-color: yellow;
+  background-color: #FFDE1A;
+  line-height: 90px;
+}
+.iconTitle{
+  font-weight:600 ;
+  font-size: 1.3rem;
+ 
 }
 
 .cashPayment {
-  background-color: yellow;
+  background-color: #FFDE1A;
+  line-height: 90px;
 }
 
 .courierPayment {
-  background-color: yellow;
+  background-color: #FFDE1A;
+  line-height: 90px;
 }
 
 
@@ -130,22 +164,30 @@
 
 .delivery-food{
     height: 950px;
-    background-color: gray;
+    background-image: url("https://farsh.in.ua/wp-content/themes/farsh/img/dark-wall.jpg");
 }
 .delivery-food-info{
-    margin: 100px auto;
-    width: 70%;
+    margin: 0px auto;
+    width: 50%;
+}
+.delivery-food-spacer{
+  height: 100px;
+}
+.delivery-food-spacer2{
+  height: 25px;
 }
 .mainTitleDelivery{
-    font-size: 30px;
-    margin-top: 100px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
 }
 .deliveryTitle1{
     margin-top: 20px;
-    
-    font-size: 25px;
-
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: white;
 }
 .deliveryTitle2{
     font-size: 20px;
+    color: grey;
 }

@@ -4,16 +4,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: gray;
-    // background-image: url(../src/assets/images/bigIMAGE1.jpg);
+    background-size: cover ;
+    background-position: center;
+    background-image: url("https://farsh.in.ua/wp-content/uploads/2020/08/IMG_2196-2-scaled-e1603364552111.jpg");
   }
   
   .title {
     width: 70%;
-    margin: 0 auto;
-    background-image: url(/src/assets/images/bigIMAGE1.jpg);
+    margin: 100px auto;
   }
-    
+  .title-text-info{
+    font-size: 2.22rem;
+    font-weight: 800;
+  }
+  .container-about-wrapper{
+    height: 480px;
+  background-color: rgba(0, 0, 0, 0.2);
+  }
+    .sub-title-1{
+      font-size: 1rem;
+    font-weight: 500;
+    color: #FFDE1A ;
+    }
+    .sub-title-2{
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white ;
+    }
   .about-info{
       width: 70%;
       margin: 0 auto;
@@ -36,12 +53,22 @@
   }
 
   //////////////////////////////////
+  .detail-wrapper{
+    height: 420px;
+    background-image: url("https://farsh.in.ua/wp-content/themes/farsh/img/white-wall-01.jpg");
+  }
+  .detail-wrapper-spacer{
+    height: 70px;
+  }
   .detail-info {
 
-    margin: 200px auto;
+    margin: 0px auto;
     width: 70%;
   }
-  
+  .t1{
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
  
   .all-info {
     display: flex;
@@ -67,40 +94,62 @@
   }
   
   .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    line-height: 90px;
+    width: 90px;
+    height: 90px;
+    border-bottom-left-radius: 37px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    // border-radius: 50%;
   }
   
   .onlinePayment {
-    background-color: yellow;
+    background-color: #FFDE1A;
   }
   
   .cashPayment {
-    background-color: yellow;
+    background-color: #FFDE1A;
   }
   
   .courierPayment {
-    background-color: yellow;
+    background-color: #FFDE1A;
   }
   
   /////////////////////////////////
   .button-career{
     width: 210px;
     height: 55px;
-    background-color: yellow;
+    background-color: #FFDE1A;
+    border: none;
+    font-weight: 500;
     
   }
   ////////////////////////////////
-  .delivery-info{
-    width: 80%;
+  .delivery-info-wrapper{
+    width: 70%;
     margin: 0 auto;
   }
+  
   .info-2{
-    width: 500px;
+    width: 34%
+  }
+  .infoTitle{
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .infoText{
+    font-size: 18px;
+    color: grey;
   }
   .order-button{
-    width: 210px;
+    border: none;
+    width: 150px;
     height: 55px;
-    background-color: yellow;
+    font-weight: 500;
+
+    background-color: #FFDE1A;
+  }
+  .info-text-spacer{
+    height: 50px;
   }

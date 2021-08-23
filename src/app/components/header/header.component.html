@@ -1,16 +1,22 @@
 <header>
   
   <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" [routerLink]="[ '' ]">ФАРШ</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   
+      
+      <div class="container-fluid">
+        <a class="navbar-brand" [routerLink]="[ '' ]">
+        <img src="https://farsh.in.ua/wp-content/uploads/2020/02/logo.svg" alt="">
+      </a>
+      
+      <div class="collapse navbar-collapse" >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a [routerLink]="[ '/burgers' ]" routerLinkActive="active" class="nav-link">БУРГЕРИ</a>
+            
+            <div class="menu-item">
+              <div class="icom"></div>
+              <a [routerLink]="[ '/burgers' ]" routerLinkActive="active" class="nav-link">БУРГЕРИ</a>
+            </div>
+            
           </li>
           <li class="nav-item">
             <a [routerLink]="[ '/products', 'kebab' ]" routerLinkActive="active" class="nav-link">КЕБАБ</a>
@@ -24,8 +30,13 @@
           <li class="nav-item">
             <a [routerLink]="[ '/products', 'drinks' ]" routerLinkActive="active" class="nav-link">НАПОЇ</a>
           </li>
+          <li class="nav-item">
+            <a [routerLink]="[ '/admin' ]" routerLinkActive="active" class="nav-link">ADMIN</a>
+          </li>
         </ul>
       </div>
+      
+      <!-- ///////// -->
       <div class="header-left">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -38,28 +49,32 @@
             <a [routerLink]="[ '']" routerLinkActive="active" class="nav-link">Увійти</a>
           </li>
         </ul>
-        <div class="container-fluid visible">
-          <button class=" navbar navbar-light bg-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <div >
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class=" navbar-toggler-icon"></span>
           </button>
         </div>
       </div>
-
+      
     </div>
+  
   </nav>
 </header>
 
 
+
+
+<!-- class="container-fluid visible" -->
 <!-- 
-<div class="container-fluid">
+  <div class="container-fluid">
     <button class=" navbar navbar-light bg-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
 </div> -->
 
 
 <!-- <nav class="navbar navbar-light bg-light fixed-top">
-    <div class="container-fluid">
+  <div class="container-fluid">
       <a class="navbar-brand" href="#">Offcanvas navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>

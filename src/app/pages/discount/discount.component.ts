@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IDiscount } from 'src/app/shared/models/discount/discount.model';
+import { DiscountService } from 'src/app/shared/services/discount/discount.service';
 
 @Component({
   selector: 'app-discount',
@@ -6,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./discount.component.scss']
 })
 export class DiscountComponent implements OnInit {
-
-  constructor() { }
+ public userDiscounts: Array<IDiscount> = []; 
+  
+  constructor(
+    private discountService: DiscountService 
+  ) { }
 
   ngOnInit(): void {
   }

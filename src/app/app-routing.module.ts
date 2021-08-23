@@ -18,12 +18,18 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { BasketDetailsComponent } from './components/basket-details/basket-details.component';
 
+import { AdminComponent } from './admin/admin.component';
+import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
+import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
+import { AdminDiscountComponent } from './admin/admin-discount/admin-discount.component';
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'burgers', component: BurgersComponent},
   {path: 'burgers/:name', component: BurgersDetailsComponent},
-  {path: 'products', component: ProductsComponent},
-  {path: 'products/:name', component: ProductDetailsComponent},
+  {path: 'products/:category', component: ProductsComponent},
+  {path: 'products/:category/:name', component: ProductDetailsComponent},
   {path: 'basket', component: BasketComponent},
   {path: 'discount', component: DiscountComponent},
   {path: 'discount/:name', component: DiscountDetailsComponent},
@@ -34,6 +40,13 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactsComponent},
   {path: 'basketDetails', component: BasketDetailsComponent},
+  {path: 'admin', component: AdminComponent, children: [
+    {path: '', pathMatch: 'full', redirectTo: 'discount'},
+    {path: 'discount', component: AdminDiscountComponent},
+    {path: 'category', component: AdminCategoryComponent},
+    {path: 'product', component: AdminProductComponent},
+    {path: 'order', component: AdminOrderComponent},
+  ]},
 ];
 
 @NgModule({

@@ -22,6 +22,12 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { BasketDetailsComponent } from './components/basket-details/basket-details.component';
 
+import { AdminComponent } from './admin/admin.component';
+import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
+import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
+import { AdminDiscountComponent } from './admin/admin-discount/admin-discount.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +47,12 @@ import { BasketDetailsComponent } from './components/basket-details/basket-detai
     PrivacyComponent,
     AboutComponent,
     ContactsComponent,
-    BasketDetailsComponent
+    BasketDetailsComponent,
+    AdminComponent,
+    AdminCategoryComponent,
+    AdminProductComponent,
+    AdminOrderComponent,
+    AdminDiscountComponent
   ],
   imports: [
     BrowserModule,

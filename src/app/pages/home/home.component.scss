@@ -1,0 +1,545 @@
+/////////////////////////////////////////////swiper
+.slider-block {
+
+  height: 545px;
+}
+
+///////////////////////////////////////////////delivery
+.delivery-area {
+  width: 100%;
+  height: 115px;
+  background-image: url("https://farsh.in.ua/wp-content/themes/farsh/img/dark-wall-01.jpg");
+}
+
+.delivery-area-wrapper {
+  margin: 0 auto;
+
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.block1 {
+
+  width: 40%;
+  height: 115px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.block2 {
+  border-left: 1px solid rgb(190, 190, 190);
+  border-right: 1px solid rgb(190, 190, 190);
+  width: 40%;
+  height: 115px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.delivery-button-wrapper {
+
+  width: 200px;
+  height: 60px;
+  background-color: #FFDE1A;
+  color: black;
+  text-align: center;
+  // text-decoration: none;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.delivery-button {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.delivery-description {
+  color: white;
+
+}
+
+.delivery-time {
+  color: #FFDE1A;
+  text-align: center;
+
+}
+
+.delivery-title {
+  text-transform: uppercase;
+  text-align: center;
+
+  color: white;
+  font-weight: 800;
+}
+
+.delivery-block {
+  margin: 0 auto;
+  text-align: center;
+}
+
+///////////product list
+.product-list{
+  width: 80%;
+  margin: 0 auto;
+}
+.product-list-spacer{
+  height: 150px;
+}
+.product{
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+
+}
+.prod-info{
+  height: 100%;
+  width: 50%;
+  
+}
+.prod-sub-title{
+  color: #FFDE1A;
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 27.2px;
+  text-transform: uppercase;
+}
+.prod-sub-spacer{
+  height: 15px;
+
+}
+.prod-maintitle{
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+
+}
+.prod-detail{
+  height: 125px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.prod-small-info{
+  width: 30%;
+  height: 50px;
+  // border-left: 2px solid yellow;
+}
+.prod-small-wrapper{
+  border-left: 2px solid #FFDE1A;
+width: 40%;
+display: flex;
+flex-direction: row;
+height: 70px;
+}
+.price{
+  font-size: 1.3rem;
+}
+.weight{
+  font-size: 0.8rem;
+}
+.prod-name-title{
+  font-weight: 800;
+  text-transform: uppercase;
+  
+}
+.prod-mainInfo-wrapper{
+  display: flex;
+
+}
+.prod-main-info-maintext{
+  width: 40%;
+  padding: 10px;
+}
+.prod-main-info{
+  display: flex;
+  flex-direction: row;
+  width:60%;
+  height: 350px;
+  
+  background-image: url("https://farsh.in.ua/wp-content/uploads/2021/02/set-e1612623008958.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+////////////BENEFITS
+
+.benefits-info {
+  background-image: url("https://farsh.in.ua/wp-content/themes/farsh/img/dark-wall-01.jpg");
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+}
+
+.benefits-info-spacer {
+  height: 70px;
+}
+
+.benefits-info-wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+
+.all-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.small-detail-1 {
+  //   border: 1px solid #000;
+  border-right: 1px solid #FFDE1A;
+  ;
+  //   padding: 20px;
+
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.icon {
+  line-height: 90px;
+  width: 90px;
+  height: 90px;
+  border-bottom-left-radius: 37px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border: 1px solid #FFDE1A;
+}
+
+
+
+.ben-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.ben-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+////////////about
+
+
+.about-spacer {
+  height: 175px;
+}
+
+.about-block1-spacer {
+  height: 30px;
+}
+
+.about-block1 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-block1-text {
+  width: 60%;
+
+}
+
+.about-block1-text-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.about-block1-main-text {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+// src="https://farsh.in.ua/wp-content/uploads/2020/08/IMG_8839-scaled-scaled-e1603364147181-415x370.jpg"
+
+h4 {
+  margin-top: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-block2-text-wrapper {
+  width: 30%;
+}
+
+.about-block2-text {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.about-block2-main-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.about-button-wrapper {
+
+  width: 200px;
+  height: 60px;
+  background-color: #FFDE1A;
+  color: black;
+  text-align: center;
+  // text-decoration: none;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.about-button {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about-block3-main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: #FFDE1A;
+  border: none;
+  margin-top: 40px;
+  width: 200px;
+  height: 55px;
+}
+
+
+.about-block3 {
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+.h2 {
+  font-size: 2.2rem;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  font-weight: 800;
+}
+
+.about-block-maintext {
+  font-size: 1rem;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  line-height: 1.6;
+}
+
+.hidden-maintext {
+  font-size: 1rem;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  line-height: 1.6;
+}
+
+
+////////////intagram section
+.instagram-section {
+  height: 1115px;
+  background-image: url("https://farsh.in.ua/wp-content/themes/farsh/img/dark-wall-02.jpg");
+}
+
+.instagram-section-spacer {
+  height: 125px;
+}
+
+.instagram-section-maincontent {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sector {
+    
+  height: 405px;
+  display: flex;
+  justify-content: center;
+}
+.block-cont{
+    width: 50%;
+}
+.subTitle{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #FFDE1A;
+}
+.title-spacer{
+    height: 25px;
+}
+.main-tittle-inst{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.insta-link-wrapper{
+    height: 50px;
+    width: 200px;
+    background-color: #FFDE1A;
+    display: flex;
+    justify-content: center;
+}
+.insta-link{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    line-height: 50px;
+}
+.block-cont-1{
+    display: flex;
+    
+    width: 50%;
+}
+.block-cont-1-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.block-cont-2{
+    width: 50%;
+    display: flex;
+    // height: 50%;
+}
+.block-cont-3{
+    display: flex;
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.item1{
+    
+    height: 50%;
+    width: 100%;
+    margin-right: 5px;
+    
+}
+
+.itemIMG{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/08/IMG_9075-scaled-e1597077508345.jpg)
+}
+.block-cont-img{
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/08/IMG_8869-scaled-scaled.jpg)
+}
+///////
+.box{
+    height: 100%;
+width: 25%;
+
+margin: 10px;
+}
+.box-item1{
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/08/IMG_8857-scaled-scaled.jpg)
+}
+.medium-box{
+    display: flex;
+
+    height: 50%;
+    
+}
+.small-box{
+    width: 50%;
+}
+.notempty{
+    margin-bottom: 5px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/08/IMG_9064-scaled-e1597325989641-scaled-e1603387981709.jpg);
+}
+.notempty2{
+    margin: 5px;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/08/IMG_9060-1-scaled-e1603385780683.jpg);
+}
+.box-item2{
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/08/IMG_8788-scaled-scaled-e1603385050108.jpg);
+}
+
+.notempty3{
+    margin-bottom: 5px;
+    margin-right: 5px;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/02/IMG_8695-scaled-scaled-e1603384734839.jpg)
+}
+.notempty4{
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/08/IMG_5822-scaled-scaled.jpg)
+    }
+.notempty5{
+    margin-top: 5px;
+    margin-left: 5px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://farsh.in.ua/wp-content/uploads/2020/05/IMG_9074-scaled-e1618499287207.jpg)
+}
+.medium-box-spacer{
+    
+    height: 5px;
+}
+
+
+
+
+
+
+
+
+
