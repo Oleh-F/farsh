@@ -26,3 +26,22 @@ display: flex;
     // background-size: unset;
     // background-image: url('/src/assets/icons/headerFooter/burger.svg');
 }
+.main{
+    display: flex;
+
+}
+.kebab{
+    display: block;
+     
+    width: 30px;
+    height: 30px;
+    background: url('../../../assets/icons/headerFooter/kebab.svg');
+}
+
+
+
+@media screen and (min-width: 992px){
+    .navbar-expand-lg .navbar-toggler{
+        display: block!important;
+    }
+}

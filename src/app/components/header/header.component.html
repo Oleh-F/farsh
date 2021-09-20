@@ -19,8 +19,15 @@
             
           </li>
           <li class="nav-item">
-            <a [routerLink]="[ '/products', 'kebab' ]" routerLinkActive="active" class="nav-link">КЕБАБ</a>
-          </li>
+            <div class="main">
+              <div class="kebab"></div>
+              <div>
+                
+                <a [routerLink]="[ '/products', 'kebab' ]" routerLinkActive="active" class="nav-link">
+                  КЕБАБ</a>
+                </div>
+              </div>
+              </li>
           <li class="nav-item">
             <a [routerLink]="[ '/products', 'snacs' ]" routerLinkActive="active" class="nav-link">ЗАКУСКИ</a>
           </li>
@@ -43,7 +50,7 @@
             <a routerLinkActive="active" class="nav-link">+38 (068) 302 20 20</a>
           </li>
           <li class="nav-item">
-            <a [routerLink]="[ '/basketDetails']" routerLinkActive="active" class="nav-link">корзина</a>
+            <a [routerLink]="[ '/basketDetails']" routerLinkActive="active" class="nav-link">корзина {{ totalPrice }} грн</a>
           </li>
           <li class="nav-item">
             <a [routerLink]="[ '']" routerLinkActive="active" class="nav-link">Увійти</a>

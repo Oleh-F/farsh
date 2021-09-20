@@ -1,1 +1,30 @@
-<p>products works!</p>
+<div class="container mt-3 mb-3">
+
+  <div class="row">
+    <div class="card pt-3 col-4" *ngFor="let prod of products">
+      <img [src]="prod.image" class="card-img-top">
+
+      <div class="card-body text-left">
+        <h4 class="card-title mb-5">{{prod.name}}</h4>
+        <p>{{prod.description}}</p>
+        <div class="price-and-btn">
+          <div>
+            <h5 class="text-danger">{{prod.price * prod.count}} грн</h5>
+          </div>
+          <div class="count">
+            <button (click)="countProduct(prod, false)" class="btn btn-danger btn-sm">-</button>
+            <input class="w-50" type="text" [(ngModel)]="prod.count">
+            <button (click)="countProduct(prod, true)" class="btn btn-success btn-sm">+</button>
+          </div>
+
+          <div class="btn">
+            <a class="btn-inbasket" (click)="addToBusket(prod)" [routerLink]="[ '/products',]">В кошик</a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

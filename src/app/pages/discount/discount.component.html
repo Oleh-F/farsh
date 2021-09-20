@@ -1,23 +1,27 @@
 <div class="container-discount">
-    <div class="container-discount-wrapper">
+  <div class="container-discount-wrapper">
 
-      <div class="title">
-        <p class="sub-title-1">ФАРШ — ТВІЙ КРАЩИЙ ВИБІР</p>
-        <h1 class="sub-title-2">акції</h1>
-      </div>
+    <div class="title">
+      <p class="sub-title-1">ФАРШ — ТВІЙ КРАЩИЙ ВИБІР</p>
+      <h1 class="sub-title-2">акції</h1>
     </div>
   </div>
-  <!--  -->
-  <div class="spacer100"></div>
+</div>
+<!--  -->
+<div class="spacer100"></div>
 <!--  -->
 <div class="container">
   <div class="row">
     <div class="card col-6" *ngFor="let disc of userDiscounts">
       <img [src]="disc.image" class="card-img-top" alt="...">
       <div class="card-body">
-        <h3 class="card-title">{{disc.title}}</h3>
-        <p class="card-text">{{disc.text}}</p>
+        <a class="link" [routerLink]="[ '/discount',  transliterateTitle(disc.title), disc.id ]">
+          <h3 class="card-title">{{disc.title}}</h3>
+        </a>
+        <p class="card-text">{{ disc.text }}</p>
+
       </div>
     </div>
   </div>
 </div>
+<div class="spacer100"></div>

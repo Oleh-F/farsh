@@ -31,7 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss", 
+              "src/styles.scss",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ngx-toastr/toastr.css"
             ],
@@ -106,10 +106,15 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/appshared/styles/fonts/fonts.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

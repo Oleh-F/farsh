@@ -1,1 +1,24 @@
-<p>discount-details works!</p>
+<div class="container-fluid">
+    
+    <img [src]="discount.image"  height="600px" width="100%" alt="">
+    <div class="maintitle">
+        <p>{{discount?.title}}</p>
+    </div>
+
+</div>
+<div class="main">
+    <div class="spacer35"></div>
+    <div class="mainText">{{ discount?.text }}</div>
+    <div class="spacer55"></div>
+    <div class="footer">
+        <div class="spacer65"></div>
+        <div class="social-media">
+            <span><strong>Ми онлайн: </strong></span>
+        <a href="https://www.facebook.com/farshdelivery/" target="_blank">
+          <span class=" social-media-icon"><i class="uit uit-facebook-f"></i></span>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="spacer125"></div>

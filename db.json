@@ -1,0 +1,121 @@
+{
+  "discounts": [
+    {
+      "id": 1,
+      "title": "ФАРШ НАРАХОВУЄ БОНУСИ ВІД КОЖНОГО ЗАМОВЛЕННЯ",
+      "text": "Компанія ФАРШ запустила бонусно-накопичувальну систему для своїх постійних а також всіх нових клієнтів у розмірі 3% від суми в чеку",
+      "image": "https://farsh.in.ua/wp-content/uploads/2020/12/DSC04807-scaled-e1608636715892-655x400.jpg"
+    },
+    {
+      "title": "bgbgb",
+      "text": "mjnjn",
+      "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2FIMG_9061-scaled-655x400.jpg?alt=media&token=673e1c7b-5188-4882-ac05-1ae9dcca3525",
+      "id": 2
+    },
+    {
+      "title": "ЗНИЖКА -15% НА “ЗАБЕРУ САМ”",
+      "text": "ЗАБИРАЙТЕ ЗАМОВЛЕННЯ САМОСТІЙНО ТА ОТРИМУЙТЕ ПЕРЕВАГИ:\nгаряче, щойно приготовлене замовлення;\nзнижку 15%;\nвідсутність мінімальної суми замовлення!\n \n\n\n\nЯК ВСЕ ВІДБУВАЄТЬСЯ?\nОбери улюблені бургери, картоплю або напої в меню на сайті;\nВ «Кошику» обрати доставку «Самовивіз -15%» та адресу найближчого до вас пункту видачі замовлень;\nЗнижка 15% нараховується автоматично та поширюється на усі позиції в чеку;\nПідтвердити замовлення та очікувати на дзвінок адміністратора щодо уточнення часу забирання замовлення;\nТакож можна зателефонувати до оператора і просто озвучити бажання забрати замовлення самостійно;\nЗдійснити самовивіз та скористатися знижкою можна щодня з 10:00 до 22:00;\nДана акція не поєднується з іншими акціями.\n \n\n",
+      "image": "https://farsh.in.ua/wp-content/uploads/2020/12/DSC04807-scaled-e1608636715892-655x400.jpg",
+      "id": 3
+    }
+  ],
+  "category": [
+    {
+      "name": "кебаб",
+      "path": "kebab",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fkebab.svg?alt=media&token=2ba6e2f7-8cb4-4661-9d48-4db01e8559ad",
+      "id": 1
+    },
+    {
+      "name": "бургери",
+      "path": "burgers",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fburger.svg?alt=media&token=4e8d879f-5804-49ec-ae7d-97e18cfd5ac0",
+      "id": 2
+    },
+    {
+      "name": "закуски",
+      "path": "snacs",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fsnacks.svg?alt=media&token=b5eb410c-ce8a-4e29-bc5e-ab057bfd4000",
+      "id": 3
+    },
+    {
+      "name": "десерти",
+      "path": "desserts",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fdoughnut.svg?alt=media&token=f420441c-c10c-4035-a7bb-a4e3b30ade2c",
+      "id": 4
+    },
+    {
+      "name": "напої",
+      "path": "drinks",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fdrink.svg?alt=media&token=10508c14-5b6d-42c1-8ba6-1b18a8990c62",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "category": {
+        "name": "кебаб",
+        "path": "kebab",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fkebab.svg?alt=media&token=2ba6e2f7-8cb4-4661-9d48-4db01e8559ad",
+        "id": 1
+      },
+      "name": "Сет з кебабів L",
+      "path": "set-kebabiv-l",
+      "description": "3 кебаби L +дві різні картоплі + соус кетчуп + 1л Коли в подарок",
+      "weight": "1500",
+      "price": 429,
+      "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fset-kebabiv-e1626783215574.jpg?alt=media&token=35b54f11-f076-4216-a104-24f70983c7d8",
+      "count": 1,
+      "id": 1
+    },
+    {
+      "category": {
+        "name": "закуски",
+        "path": "snacs",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fsnacks.svg?alt=media&token=0c51255f-af32-445a-8106-4f59e8da5595",
+        "id": 3
+      },
+      "name": "ЗАЧЬОТНІ КРИЛЬЦЯ 5ШТ",
+      "path": "product/zachotni-kryla-5sht",
+      "description": "5 ніжних соковитих крилець власного приготування обняті в медово-гірчичному соусі",
+      "weight": "60",
+      "price": 109,
+      "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2FWFS_0458-e1626721198359.png?alt=media&token=fc116375-9a4f-4092-a3b3-1872066ad2be",
+      "count": 1,
+      "id": 2
+    },
+    {
+      "category": {
+        "name": "десерти",
+        "path": "desserts",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fdoughnut.svg?alt=media&token=f420441c-c10c-4035-a7bb-a4e3b30ade2c",
+        "id": 4
+      },
+      "name": "МАКАРОНС (5ШТ)",
+      "path": "makarons-premium-5sht",
+      "description": "5  макаронcів різного смаку в 1-му наборі",
+      "weight": "40",
+      "price": 99,
+      "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2F238-2380618_macaron-png-macarons-png-transparent-png.png?alt=media&token=910ca03d-8a82-4d61-8f1b-1780d85e8b9f",
+      "count": 1,
+      "id": 3
+    },
+    {
+      "category": {
+        "name": "напої",
+        "path": "drinks",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fdrink.svg?alt=media&token=10508c14-5b6d-42c1-8ba6-1b18a8990c62",
+        "id": 5
+      },
+      "name": "ТИХА-ОБЛІПИХА",
+      "path": "yalivets-molodets",
+      "description": "Склад: вода, симбіоз дріжджів та бактерій Medusomyces gisevii Lindau, зелений чай сенча, обліпиха, цедра апельсина, цукор.",
+      "weight": "330 мл",
+      "price": 69,
+      "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2F6-1200x800-1-e1619532954724.jpg?alt=media&token=c961bc50-b4c1-4da1-8a76-6e9c6b43338e",
+      "count": 1,
+      "id": 4
+    }
+  ],
+  "orders": []
+}

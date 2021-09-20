@@ -1,7 +1,16 @@
 /////////////////////////////////////////////swiper
 .slider-block {
 
-  height: 545px;
+  height: 636px;
+}
+.carousel-item{
+  background-size: auto;
+  background-position: center;
+}
+.image1{
+  background-image: url();
+  background-size: cover;
+  background-position: center;
 }
 
 ///////////////////////////////////////////////delivery
@@ -329,7 +338,7 @@ h4 {
   margin-bottom: 100px;
 }
 
-button {
+.add {
   text-transform: uppercase;
   background-color: #FFDE1A;
   border: none;
@@ -535,7 +544,12 @@ margin: 10px;
     height: 5px;
 }
 
-
+.testIcon{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url('../../../assets/icons/headerFooter/burger.svg');
+}
 
 
 

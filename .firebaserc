@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "farsh-burgers": {
+      "hosting": {
+        "farsh": [
+          "farsh-burgers"
+        ]
+      }
+    }
+  }
+}

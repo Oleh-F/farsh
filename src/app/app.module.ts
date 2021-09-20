@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from'@angular/common/http';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
@@ -31,6 +33,13 @@ import { AdminCategoryComponent } from './admin/admin-category/admin-category.co
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
 import { AdminDiscountComponent } from './admin/admin-discount/admin-discount.component';
+import { from } from 'rxjs';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -66,6 +75,11 @@ import { AdminDiscountComponent } from './admin/admin-discount/admin-discount.co
     ReactiveFormsModule,
     BrowserAnimationsModule, 
     ToastrModule.forRoot(),
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireStorageModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

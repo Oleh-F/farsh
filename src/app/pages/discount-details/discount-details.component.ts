@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { IDiscount } from 'src/app/shared/models/discount/discount.model';
+import { DiscountService } from 'src/app/shared/services/discount/discount.service';
 
 @Component({
   selector: 'app-discount-details',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscountDetailsComponent implements OnInit {
 
-  constructor() { }
+  discount!: IDiscount;
+
+  constructor(
+    private discountService: DiscountService,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.loadDiscount();
+  }
+
+  loadDiscount(): void {
+    const id = Number(this.activatedRoute.snapshot.paramMap.get("id"));
+    this.discountService.getOneJSONDiscount(id).subscribe(data => {
+      this.discount = data;
+    })
   }
 
 }
