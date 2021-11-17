@@ -1,7 +1,7 @@
 .bottom-row{
 border-top:1px white;
     color: white;
-    
+    font-size: 13px;
     border-top: 1px solid white;
     height: 100px;
     display: flex;
@@ -15,4 +15,40 @@ ul{
    
     background-image: url('https://farsh.in.ua/wp-content/themes/farsh/img/dark-wall-02.jpg');
 
+}
+
+.mastercart{
+    margin-right: 10px;
+}
+.redstone{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    display: flex;
+
+}
+
+.spacer60{
+    height: 60px;
+}
+.snacIcon{
+    margin-right: 10px;
+    
+    display: block;
+    color: white; 
+    width: 30px;
+    height: 30px;
+    
+   
+}
+
+.iconMedia{
+    margin-right: 15px;
+    
+    display: block;
+    
+    width: 30px;
+    height: 30px;
+    
 }

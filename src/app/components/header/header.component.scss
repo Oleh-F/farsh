@@ -9,10 +9,11 @@
     flex-direction: row;
     justify-content: space-around;
 }
-// .container-fluid{
-//     height: 50px;
-//     width: 50px;
-// }
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .menu-item{
     
 display: flex;
@@ -22,26 +23,176 @@ display: flex;
     width: 50px;
     height: 50px;
     background-color: white;
-    // background-position: center;
-    // background-size: unset;
-    // background-image: url('/src/assets/icons/headerFooter/burger.svg');
+   
 }
 .main{
     display: flex;
 
 }
-.kebab{
+
+
+.snacIcon{
+    
     display: block;
-     
+    color: white; 
     width: 30px;
-    height: 30px;
-    background: url('../../../assets/icons/headerFooter/kebab.svg');
+    height: 30px; 
 }
 
+.navbar-toggler{
+    display: block;
+}
+
+// @media screen and (min-width: 992px){
+//     .navbar-expand-lg .navbar-toggler{
+//         display: block!important;
+//     }
+// }
 
 
-@media screen and (min-width: 992px){
-    .navbar-expand-lg .navbar-toggler{
-        display: block!important;
-    }
+.hiddenMenu{
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    // padding-top: -500px;
+    width: 40%;
+    height: 100%;
+    transition: right 2s;
+    background-color: rgb(241, 239, 239);
+    // background-color: rgb(160, 144, 144);
+    position: fixed;
+    top: 0px;
+    right: 0;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 20px;
+    
+}
+.listNumber{
+    font-weight: 500;
+    font-size: 1rem;
+    color: gray;
+}
+.hiddenLink{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.33rem;
+    color:black;
+}
+
+.hiddenHeader{
+    display: flex;
+    justify-content: space-between;
+}
+// .hideMenuButton{
+    
+//     justify-content: space-around;
+// }
+.main{
+    display: flex;
+
+}
+.snacIcon{
+    margin-right: 10px;
+    
+    display: block;
+    color: white; 
+    width: 30px;
+    height: 30px;
+    
+   
+}
+.socialIconsWrapper{
+    display: flex;
+    margin-left: 20px;
+}
+
+.iconMedia{
+    margin-right: 15px;
+    margin-left: 10px;
+    display: block;
+    
+    width: 30px;
+    height: 30px;
+    
+}
+.cencelButton{
+    width: 40px;
+    height: 40px;
+    // background-color: black;
+}
+
+////////busket//////
+.hiddenBasket{
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    // padding-top: -500px;
+    width: 50%;
+    height: 100%;
+    transition: right 2s;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    padding-top: 50px;
+}
+.hiddenBasketIcon{
+    color: black;
+    font-weight: 500;
+}
+.wrapperList{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.smallText{
+    color: white;
+    font-size: 1rem;
+}
+.smallText1{
+    color: #FFDE1A ;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.wrapperBottomOfList{
+    padding-left: 20px;
+    display: flex;
+}
+.fastOrder{
+    font-size: 1.2rem;
+    color: #FFDE1A ;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    border: none;
+}
+.simpleOrder{
+    background-color: #FFDE1A ;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.bottomOfList{
+    line-height: 100px;
+    bottom: 0;
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://farsh.in.ua/wp-content/themes/farsh/css/../img/dark-wall.jpg);
+}
+.orderButtons{
+    display: flex;    
+}
+.basketTitleAndButton-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.item1{
+    padding-right: 20px;
 }

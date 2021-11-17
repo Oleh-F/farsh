@@ -1,0 +1,154 @@
+.cabinet-section{
+    width: 40%;
+  margin: 0 auto;    
+}
+.spacer40{
+    height: 40px;
+}
+.title-main{
+    text-align: center;
+    font-size: 3.555rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.title-main1{
+    
+    font-weight: 800;
+    
+}
+.category-list{
+
+    margin: 0 auto;
+    // justify-content: center;
+    // text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+
+
+}
+.category-menu{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper-menu{
+    height: 60px;
+    display: flex;
+    // margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.item{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 50px;
+    
+
+}
+
+.category-list-item{
+    
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 50px;;
+    
+}
+.category-list-item:hover{
+    width: 200px;
+    height: 50px;;
+    background-color: #ffde1a;
+}
+/////////
+.info-block{
+    width: 80%;
+    // background-color: red;
+    margin: 0 auto;
+    
+}
+h5{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.user{
+    padding: 10px;
+    height: 50px;
+    width: 45%;
+    
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: none;
+}
+.user-info-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.user-number{
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+    width:  100%;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: none;
+}
+.user-email{
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+    width:  100%;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: none;
+}
+///////////////////
+.button-save{
+    width: 150px;
+    height: 50px;
+    background-color: #ffde1a;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.button-exit{
+    
+
+    
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.buttons{
+    display: flex;
+}
+.button-exit1{
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffde1a;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.button-exit1:hover{
+    background-color: white;
+    border: 2px solid #ffde1a;
+}
+.button-save:hover{
+    background-color: white;
+    border: 2px solid #ffde1a;
+}
+.spacer50{
+    height: 50px;
+}

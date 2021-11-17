@@ -1,72 +1,220 @@
 <header>
-  
-  <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
-   
-      
-      <div class="container-fluid">
-        <a class="navbar-brand" [routerLink]="[ '' ]">
-        <img src="https://farsh.in.ua/wp-content/uploads/2020/02/logo.svg" alt="">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="[ '' ]">
+        <img (click)="hideMenu()" (click)="hideBasket()" src="https://farsh.in.ua/wp-content/uploads/2020/02/logo.svg"
+          alt="">
       </a>
-      
-      <div class="collapse navbar-collapse" >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            
-            <div class="menu-item">
-              <div class="icom"></div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item ">
+
+            <div (click)="hideMenu()" (click)="hideBasket()" class="menu-item">
+              <div>
+                <img class="snacIcon" src="../../../assets/icons/headerFooter/burger.svg" alt="">
+              </div>
               <a [routerLink]="[ '/burgers' ]" routerLinkActive="active" class="nav-link">БУРГЕРИ</a>
             </div>
-            
+
           </li>
-          <li class="nav-item">
-            <div class="main">
-              <div class="kebab"></div>
+          <li class="nav-item ">
+            <div (click)="hideMenu()" (click)="hideBasket()" class="main">
               <div>
-                
+                <img class="snacIcon" src="../../../assets/icons/headerFooter/kebab.svg" alt="">
+              </div>
+              <div>
                 <a [routerLink]="[ '/products', 'kebab' ]" routerLinkActive="active" class="nav-link">
                   КЕБАБ</a>
-                </div>
               </div>
-              </li>
-          <li class="nav-item">
-            <a [routerLink]="[ '/products', 'snacs' ]" routerLinkActive="active" class="nav-link">ЗАКУСКИ</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a [routerLink]="[ '/products', 'desserts' ]" routerLinkActive="active" class="nav-link">ДЕСЕРТИ</a>
+            <div (click)="hideMenu()" (click)="hideBasket()" class="main">
+              <div>
+                <img class="snacIcon" src="../../../assets/icons/headerFooter/snacks.svg" alt="">
+              </div>
+              <a [routerLink]="[ '/products', 'snacs' ]" routerLinkActive="active" class="nav-link">ЗАКУСКИ</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a [routerLink]="[ '/products', 'drinks' ]" routerLinkActive="active" class="nav-link">НАПОЇ</a>
+            <div (click)="hideMenu()" (click)="hideBasket()" class="main">
+              <div>
+                <img class="snacIcon" src="../../../assets/icons/headerFooter/doughnut.svg" alt="">
+              </div>
+              <a [routerLink]="[ '/products', 'desserts' ]" routerLinkActive="active" class="nav-link">ДЕСЕРТИ</a>
+            </div>
           </li>
           <li class="nav-item">
+            <div (click)="hideMenu()" (click)="hideBasket()" class="main">
+              <div>
+                <img class="snacIcon" src="../../../assets/icons/headerFooter/drink.svg" alt="">
+              </div>
+              <a [routerLink]="[ '/products', 'drinks' ]" routerLinkActive="active" class="nav-link">НАПОЇ</a>
+            </div>
+          </li>
+          <li (click)="hideMenu()" (click)="hideBasket()" class="nav-item">
             <a [routerLink]="[ '/admin' ]" routerLinkActive="active" class="nav-link">ADMIN</a>
           </li>
         </ul>
       </div>
-      
+
       <!-- ///////// -->
       <div class="header-left">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a routerLinkActive="active" class="nav-link">+38 (068) 302 20 20</a>
+            <a routerLinkActive="active" class="nav-link">
+              <img src="https://farsh.in.ua/wp-content/uploads/2020/02/icon-phone.svg" alt="">+38 (068) 302 20 20</a>
+          </li>
+          <li (click)="showBasket()" class="nav-item">
+            <a routerLinkActive="active" class="nav-link">
+              <!-- <a [routerLink]="[ '/basketDetails']" routerLinkActive="active" class="nav-link"> -->
+              <img src="https://farsh.in.ua/wp-content/themes/farsh/img/icon-basket.svg" alt=""> {{ totalPrice }} грн
+            </a>
           </li>
           <li class="nav-item">
-            <a [routerLink]="[ '/basketDetails']" routerLinkActive="active" class="nav-link">корзина {{ totalPrice }} грн</a>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="[ '']" routerLinkActive="active" class="nav-link">Увійти</a>
+            <a [routerLink]="[ '/login']" routerLinkActive="active" class="nav-link">Увійти</a>
           </li>
         </ul>
-        <div >
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <div>
+          <button (click)="showMenu()" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class=" navbar-toggler-icon"></span>
           </button>
+
         </div>
       </div>
-      
+
     </div>
-  
+
   </nav>
 </header>
+
+<!-- //////////hidden menu//////////// -->
+
+<div *ngIf="isShow" class="hiddenMenu">
+  <div>
+    <div class="hiddenHeader">
+      <div class="nav-item">
+        <a routerLinkActive="active" class="nav-link hiddenBasketIcon">
+          <img src="https://farsh.in.ua/wp-content/uploads/2020/02/icon-phone.svg" alt="">+38 (068) 302 20 20</a>
+      </div>
+      <div (click)="showBasket()" (click)="hideMenu()" class="nav-item">
+        <a routerLinkActive="active" class="nav-link hiddenBasketIcon">
+          <img src="https://farsh.in.ua/wp-content/themes/farsh/img/icon-basket.svg" alt=""> {{ totalPrice }} грн
+        </a>
+      </div>
+
+
+      <div (click)="hideMenu()" class="cencelButton">
+        <img src="..//..//..//assets/icons/headerFooter/cencel.svg" alt="">
+
+      </div>
+    </div>
+  </div>
+  <div class="collapse navbar-collapseinline d-block">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li (click)="hideMenu()" (click)="hideBasket()" class="nav-item">
+        <a [routerLink]="[ '/discount']" routerLinkActive="active" class="nav-link hiddenLink"><span
+            class="listNumber">01</span> Акції</a>
+      </li>
+      <li (click)="hideMenu()" (click)="hideBasket()" class="nav-item">
+        <a [routerLink]="[ '/products', 'farsh-shop' ]" routerLinkActive="active" class="nav-link hiddenLink"> <span
+            class="listNumber">02</span> ФАРШ
+          SHOP</a>
+      </li>
+      <li (click)="hideMenu()" (click)="hideBasket()" class="nav-item">
+        <a [routerLink]="[ '/delivary']" routerLinkActive="active" class="nav-link hiddenLink"> <span
+            class="listNumber">03</span> Доставка та Оплата</a>
+      </li>
+      <li (click)="hideMenu()" (click)="hideBasket()" class="nav-item">
+        <a [routerLink]="[ '/career']" routerLinkActive="active" class="nav-link hiddenLink"><span
+            class="listNumber">04</span> Кар'єра</a>
+      </li>
+      <li (click)="hideMenu()" (click)="hideBasket()" class="nav-item">
+        <a [routerLink]="[ '/contact']" routerLinkActive="active" class="nav-link hiddenLink"> <span
+            class="listNumber">05</span> Контакти</a>
+      </li>
+      <li (click)="hideMenu()" (click)="hideBasket()" class="nav-item">
+        <a [routerLink]="[ '/about']" routerLinkActive="active" class="nav-link hiddenLink"><span
+            class="listNumber">06</span> Про нас</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="main">
+    <div>Ми онлайн:</div>
+    <div class="socialIconsWrapper">
+      <div class="iconNav">
+        <a target="_blank" href="https://www.facebook.com/farshdelivery/">
+          <img class="iconMedia" src="../../../assets/icons/socialMedia/facebook(black).svg" alt="">
+        </a>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.instagram.com/farsh.in.ua/">
+          <img class="iconMedia" src="../../../assets/icons/socialMedia/instagram (black).svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ///////basket////////// -->
+
+<div *ngIf="basketIsShow" class="hiddenBasket">
+  <div class="wrapperList">
+
+    <div class="basketTitleAndButton-wrapper">
+      <div class="basketTitle">
+        <h5 class="basketTitle1">мій кошик</h5>
+      </div>
+      <div (click)="hideBasket()" class="cencelButton">
+        <img src="..//..//..//assets/icons/headerFooter/cencel.svg" alt="">
+      </div>
+    </div>
+    <div class="titleList">
+      <table>
+        <tbody>
+          <tr class="align-middle" *ngFor="let prod of headerBasket;">
+            
+
+              <td class="item1">
+                <img [src]="prod.image" width="80px" alt="">
+              </td>
+              
+              <td class="item1">{{ prod.name }}</td>
+              <td class="item1">{{ prod.weight }}гр</td>
+              <td class="item1">{{ prod.count * prod.price }}грн</td>
+              <td>
+                <button (click)="removeProduct(prod)" class="btn btn-danger">delete</button>
+              </td>
+              
+            
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="bottomOfList">
+    <div class="wrapperBottomOfList">
+      <div class="smallText"><span class="smallText">До сплати:</span><span class="smallText1"> {{ totalPrice }} грн</span></div>
+      <div class="orderButtons">
+        <div class="fastOrder">
+          швидко замовити
+        </div>
+        <div class="buttonN1">
+              <a (click)="hideBasket()" [routerLink]="[ '/basket']" routerLinkActive="active" class="simpleOrder">ОФОРМИТИ
+            ЗАМОВЛЕННЯ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 

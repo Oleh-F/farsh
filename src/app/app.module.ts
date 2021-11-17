@@ -40,6 +40,9 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { LoginComponent } from './pages/login/login.component';
+import { OrderHistoryComponent } from './pages/order-history/order-history.component';
+import { PointsComponent } from './pages/points/points.component';
 
 
 @NgModule({
@@ -66,7 +69,11 @@ import { environment } from '../environments/environment';
     AdminCategoryComponent,
     AdminProductComponent,
     AdminOrderComponent,
-    AdminDiscountComponent
+    AdminDiscountComponent,
+    LoginComponent,
+    
+    OrderHistoryComponent,
+    PointsComponent
   ],
   imports: [
     BrowserModule,

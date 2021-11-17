@@ -1,17 +1,18 @@
 /////////////////////////////////////////////swiper
 .slider-block {
 
-  height: 636px;
+  height: 650px;
 }
 .carousel-item{
   background-size: auto;
   background-position: center;
 }
 .image1{
-  background-image: url();
+
   background-size: cover;
   background-position: center;
 }
+
 
 ///////////////////////////////////////////////delivery
 .delivery-area {
@@ -213,11 +214,7 @@ height: 70px;
 }
 
 .small-detail-1 {
-  //   border: 1px solid #000;
   border-right: 1px solid #FFDE1A;
-  ;
-  //   padding: 20px;
-
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -289,7 +286,6 @@ height: 70px;
   font-size: 1.3rem;
 }
 
-// src="https://farsh.in.ua/wp-content/uploads/2020/08/IMG_8839-scaled-scaled-e1603364147181-415x370.jpg"
 
 h4 {
   margin-top: 40px;
@@ -313,13 +309,12 @@ h4 {
 }
 
 .about-button-wrapper {
-
+  
   width: 200px;
   height: 60px;
   background-color: #FFDE1A;
   color: black;
   text-align: center;
-  // text-decoration: none;
   line-height: 60px;
   display: flex;
   justify-content: center;
@@ -328,6 +323,13 @@ h4 {
 
 
 .about-button {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.show-button {
+  background-color: #FFDE1A;
+  border: none;
   color: black;
   text-decoration: none;
   text-transform: uppercase;

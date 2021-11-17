@@ -1,0 +1,172 @@
+.spacer90 {
+  height: 90px;
+}
+.btn{
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.spacer70 {
+  height: 70px;
+}
+
+.mainTitleWrapper {
+  text-align: center;
+}
+
+.mainTitle1 {
+  font-size: 2.22rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.orderListTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+
+}
+
+.makeOrederForm {
+  display: flex;
+}
+
+.smallText {
+  color: white;
+  font-size: 1rem;
+}
+
+.smallText1 {
+  color: #FFDE1A;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.wrapperBottomOfList {
+  padding-left: 20px;
+  display: flex;
+  line-height: 110px;
+}
+
+.simpleOrder {
+  background-color: #FFDE1A;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.orderButtons {
+  margin-left: 30px;
+  ;
+}
+
+
+/////////l-oder
+.l-order {
+  width: 50%;
+}
+
+.subjectsInfo {
+  margin-top: 30px;
+  display: flex;
+}
+
+.payment {
+  margin-top: 10px;
+}
+
+.typeOfPay-1 {
+  padding-left: 30px;
+}
+
+.callMe {
+  margin-top: 30px;
+}
+
+.btnSmall {
+  border: none;
+  color: grey;
+  background-color: white;
+}
+
+.countText {
+  width: 25px;
+}
+
+.spacer30 {
+  height: 30px;
+}
+
+.textArea {
+  width: 100%;
+  height: 110px;
+}
+
+.l-orderBottom {
+  padding: 20px;
+  height: 114px;
+  background-image: url(https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://farsh.in.ua/wp-content/themes/farsh/css/../img/dark-wall.jpg);
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+}
+
+
+
+/////////r-oder
+.r-order {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.minimumCost {
+  height: 127px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.mainTextAboutDelivery {
+  padding: 20px 30px;
+}
+
+.costLine {
+  height: 2px;
+  background-color: green;
+}
+
+.cost {
+  margin-top: 25px;
+}
+
+.userBlock {
+
+  display: flex;
+  justify-content: space-between
+}
+
+.block2 {
+  display: flex;
+}
+
+.infoUser {
+  background-color: lightgrey;
+  border: none;
+  width: 300px;
+  height: 50px;
+  padding-left: 5px;
+}
+
+.infoUser1 {
+  background-color: lightgrey;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding-left: 5px;
+
+}
+.adress_map{
+  margin-top: 10pxw;
+  height: 400px;
+}

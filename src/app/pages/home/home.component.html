@@ -1,48 +1,15 @@
-<!-- swiper -->
-<!-- <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="true">
-  <div class="slider-block carousel-inner">
-    <div class="carousel-item active">
-
-
-
-      <img src="https://farsh.in.ua/wp-content/uploads/2020/08/IMG_9060-1-scaled-e1603385780683.jpg"
-        class="d-block w-100" alt="...">
-
-
-    </div>
-    <div class="carousel-item">
-      <img src="https://farsh.in.ua/wp-content/uploads/2020/10/IMG_9062-scaled-e1608638579312.jpg" class="d-block w-100"
-        alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://farsh.in.ua/wp-content/uploads/2020/12/DSC04799-scaled-e1608638741615.jpg" class="d-block w-100"
-        alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-    data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-    data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> -->
-
 
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="slider-block carousel-inner">
     <div class="carousel-item active">
-      <img class= 'image1' src="../../../assets/images/slide-1.jpg" class="d-block w-100 " alt="...">
+      <img src="../../../assets/images/slide-1.jpg" class=" image1 d-block w-100 " alt="...">
     </div>
     <div class="carousel-item">
-      <img class= 'image1' src="../../../assets/images/slide-2.jpg" class="d-block w-100" alt="...">
+      <img  src="../../../assets/images/slide-2.jpg" class="image1 d-block w-100  " alt="...">
     </div>
     <div class="carousel-item">
-      <img class= 'image1' src="../../../assets/images/slide-3.jpg" class="d-block w-100" alt="...">
+      <img src="../../../assets/images/slide-3.jpg" class="image1 d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -73,8 +40,7 @@
     <div class="block2">
       <div class="delivery-block">
         <div class="delivery-title">ЧАС ДОСТАВКИ</div>
-        <!-- <i class="testIcon"></i>  
-        <img src="../../../assets/icons/headerFooter/burger.svg" alt=""> -->
+        
         <div class="delivery-time">00:29:47</div>
         <div class="delivery-description">Cередній час доставки в Зеленій зоні</div>
       </div>
@@ -88,6 +54,8 @@
 </div>
 <!--  -->
 <!--  product list  -->
+<!-- <ng-content #name></ng-content> -->
+
 <div class="product-list-wrapper">
   <div class="product-list">
     <div class="product-list-spacer"></div>
@@ -258,10 +226,10 @@
         Наші бургери ― це справжній витвір кулінарного мистецтва. Ми використовуємо високоякісні інгредієнти, а також
         дотримуємося класичних рецептів, щоб Ви могли насолоджуватися автентичним смаком.
       </p>
-      <div class="showbtn">
-        <button>дізнатися більше</button>
+      <div class="about-button-wrapper">
+        <button (click)="showTextAbout()" class="show-button">дізнатися більше</button>
       </div>
-      <div class="hidden">
+      <div *ngIf="hidden" class="hidden">
         <div class="hidden-text">
           <h2>ВІДБІРНІ ІНГРЕДІЄНТИ ТА АВТЕНТИЧНІ РЕЦЕПТИ</h2>
           <p class="hidden-maintext">Якщо Вам набридли бургери у Львові з фаст фуд ресторанів, саме час замовити
@@ -292,8 +260,8 @@
             видів бургерів, а також сети для вечірок чи обіду у компанії друзів і колег. Бургери доставка у Львові яких
             здійснюється всього за 39 хвилин, принесуть Вам справжнє гастрономічне задоволення!.</p>
         </div>
-        <div class="hidebtn">
-          <button>згорнути назад</button>
+        <div class="about-button-wrapper">
+          <button (click)="hideThemAll()" class="show-button">згорнути назад</button>
         </div>
       </div>
     </div>

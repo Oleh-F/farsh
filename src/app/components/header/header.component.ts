@@ -10,6 +10,8 @@ import { OrderService } from 'src/app/shared/services/order/order.service';
 export class HeaderComponent implements OnInit {
   public headerBasket: Array<IProduct> = [];
   public totalPrice: number = 0;
+  public isShow = !true;
+  public basketIsShow = false;
   constructor(
     private orderService: OrderService
   ) { }
@@ -17,6 +19,34 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.loadBasket();
     this.updateBasket();
+  }
+  showBasket(): void {
+    this.basketIsShow = !this.basketIsShow;
+  }
+  hideBasket():void {
+    this.basketIsShow = false;
+  }
+
+  private getTotal(products: Array<IProduct>): number {
+    return products.reduce((total,prod) => total + (prod.price * prod.count), 0);
+  }
+
+  removeProduct(product: IProduct): void {
+    if (confirm('Are you sure?')){
+      const index = this.headerBasket.findIndex(prod => prod.id === product.id);
+      this.headerBasket.splice(index, 1);
+      this.totalPrice = this.getTotal(this.headerBasket);
+      this.orderService.changeBasket$.next(true);
+      localStorage.setItem('basket', JSON.stringify(this.headerBasket));
+      
+    }
+  }
+  
+  showMenu():void {
+    this.isShow = !this.isShow;
+  }
+  hideMenu():void {
+    this.isShow = false;
   }
 
   loadBasket(): void {
@@ -43,7 +73,8 @@ export class HeaderComponent implements OnInit {
       }
     )
   }
-
+  
+  
   
 
 }

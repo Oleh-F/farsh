@@ -1,0 +1,54 @@
+<div class="cabinet-section">
+  <div class="spacer40"></div>
+  <div class="title-main">
+    <h1 class="title-main1">мій аккаунт</h1>
+  </div>
+  <div class="category-menu">
+    <div class="wrapper-menu">
+
+      <ul class="category-list">
+        <li class="category-list-item">
+          <a [routerLink]="[ '/login']" class="item" href="">особисті дані</a>
+        </li>
+        <li class="category-list-item">
+          <a class="item" [routerLink]="[ '/order-history']">Історія замовлень</a>
+        </li>
+        <li class="category-list-item">
+          <a class="item" [routerLink]="[ '/points'  ]">Нараховані бали</a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+  <div  class="info-block">
+
+    <div class="form1">
+      <h5>1. Особисті дані</h5>
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+      <!-- <div class="user-info-1">
+        <input formControlName="firstName" class="user" placeholder="*Ваше ім'я" type="text">
+        <input formControlName="secondName" class="user" placeholder="*Ваше прізвище" type="text">
+      </div> -->
+      <div  class="user-info-2">
+        <input formControlName="email"  data-validate = "Valid email is required: ex@abc.xyz" class="user-email" placeholder="*Ваш email" type="text">
+      </div>
+      <div class="user-info-2">
+        <input formControlName="password" class="user-number" placeholder="*Ваш пароль" type="password">
+      </div>
+
+      <div class="buttons">
+        <button [disabled]="registerForm.invalid"   class="button-save" type="submit">Зберегти</button>
+        <div class="button-exit1">
+          <a class="button-exit" [routerLink]="[ '/home']">Вихід</a>
+
+        </div>
+
+      </div>
+    </form>
+    <div class="spacer50"></div>
+
+  </div>

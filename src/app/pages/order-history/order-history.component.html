@@ -1,0 +1,27 @@
+
+<div class="cabinet-section">
+    <div class="spacer40"></div>
+    <div class="title-main">
+        <h1 class="title-main1">мій аккаунт</h1>
+    </div>
+    <div class="category-menu">
+        <div class="wrapper-menu">
+
+            <ul class="category-list">
+                <li class="category-list-item">
+                    <a [routerLink]="[ '/login']" class="item" href="">особисті дані</a>
+                </li>
+                <li class="category-list-item">
+                    <a class="item" [routerLink]="[ '/order-history']">Історія замовлень</a>
+                </li>
+                <li class="category-list-item">
+                    <a  class="item"  [routerLink]="[ '/points'  ]">Нараховані бали</a>
+                    
+                </li>
+            
+        </ul>
+    </div>
+</div>
+    <div class="orders">
+        <p>Поки що ви не зробили жодного замовлення <a class="link" [routerLink]="[ '/home' ]"> перейти в каталог</a></p>
+    </div>

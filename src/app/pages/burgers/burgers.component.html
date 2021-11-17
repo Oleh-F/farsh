@@ -1,1 +1,298 @@
-<p>burgers works!</p>
+<div class="spacer150"></div>
+<div class="prodList">
+  <div class="mainBlok">
+    <div class="bl1" *ngFor="let burger of products">
+      <div class="titleAndPrice">
+        <div class="main1"></div>
+        <div class="main">
+          <div class="title1">
+            <div class="price-item">{{burger.price}}грн</div>
+            <div class="weight-item">/2233</div>
+          </div>
+          <div class="title2">
+            <a class="prodLink" href="">
+              <h4 class="productName">{{burger.name}}</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="else">
+        <div class="image">
+          <img class="mainImage" [src]="burger.image">
+        </div>
+        <div class="description">
+          <div class="main-text">
+            <p>{{burger.description}}</p>
+          </div>
+          <div class="main-buttons">
+            <div class="price-and-btn">
+
+              <div class="count">
+                <button (click)="countProduct(burger, false)" class="btnSmall  btn-sm">-</button>
+                <input class="countText" type="text" [(ngModel)]="burger.count">
+                <button (click)="countProduct(burger, true)"  class="btnSmall   btn-sm">+</button>
+              </div>
+
+              <div class="btn">
+                <a class="btn-inbasket" (click)="addToBusket(burger)" [routerLink]="[ '/products',]">В кошик</a>
+              </div>
+            </div>
+              <div *ngIf="countMore" class="countMoreThenOne">
+                <h5 class="text-dark"><span class="sumText">Сума:</span> {{burger.price * burger.count}} грн</h5>
+              </div>
+
+          </div>
+          <div class="add-ingredients"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bl2"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- benefits -->
+<div class="benefits-info">
+  <div class="benefits-info-spacer"></div>
+  <div class="benefits-info-wrapper">
+
+    <div class="all-info">
+      <div class="small-detail-1">
+        <div class="iconWrapper">
+          <div class="icon onlinePayment">
+            <div>
+              <img src="https://farsh.in.ua/wp-content/uploads/2020/02/benefits-01.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="ben-title">ДОСТАВКА ДО 39 ХВ</p>
+          <p class="ben-text">Наша ціль — вивести доставку на новий рівень</p>
+        </div>
+      </div>
+      <div class="small-detail-1">
+        <div class="iconWrapper">
+          <div class="icon cashPayment">
+            <div>
+              <img src="https://farsh.in.ua/wp-content/uploads/2020/02/benefits-02.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="ben-title">САМОВИВІЗ -15%</p>
+          <p class="ben-text">Ви завжди можете забрати своє гаряче замовлення у відділі самовивозу з 11:00 до 22:00</p>
+        </div>
+      </div>
+      <div class="small-detail-1">
+        <div class="iconWrapper">
+          <div class="icon courierPayment">
+            <div>
+              <img src="https://farsh.in.ua/wp-content/uploads/2020/02/benefits-03.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="ben-title">ОПЛАТА</p>
+          <p class="ben-text">Оплачуйте замовлення Онлайн або кур'єр візьме термінал з собою</p>
+        </div>
+      </div>
+      <div class="small-detail-1">
+        <div class="iconWrapper">
+          <div class="icon courierPayment">
+            <div>
+              <img src="https://farsh.in.ua/wp-content/uploads/2020/02/benefits-04.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="ben-title">СИСТЕМА ЛОЯЛЬНОСТІ</p>
+          <p class="ben-text">Постійним клієнтам — 3% знижки від кожного замовлення,нараховуються бонуси у особистий
+            кабінет</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- about section -->
+<div class="section about">
+  <div class="about-spacer"></div>
+  <div class="about-block1">
+    <div class="about-block1-text">
+      <div><span class="about-block1-text-title">фарш -</span>
+        <span class="about-block1-text-title">доставка їжі</span>
+      </div>
+      <div class="about-block1-spacer"></div>
+      <div>
+        <p class="about-block1-main-text">ФАРШ — це <strong>команда справжніх супергероїв</strong>, що працюють зі
+          свіжими інгредієнтами кожного дня.</p>
+        <p class="about-block1-main-text">ФАРШ — це доставка <strong>емоцій і задоволення</strong>,які ти отримуєш
+          кожного разу замовляючи наш хавчик.</p>
+      </div>
+    </div>
+    <div class="about-block1-img">
+      <img src="https://farsh.in.ua/wp-content/uploads/2020/08/IMG_8839-scaled-scaled-e1603364147181-415x370.jpg"
+        height="370px" alt="">
+    </div>
+  </div>
+  <div class="about-block2">
+    <div class="about-spacer"></div>
+
+    <div class="about-block2-text">
+      <div class="about-block2-text-wrapper">
+
+        <h4>Жити щоб їсти</h4>
+        <p class="about-block2-main-text">Наша ціль — вивести доставку бургерів у Львові на принципово новий рівень
+          швидкості та задоволення.
+        </p>
+        <p class="about-block2-main-text">
+          Ми хочемо показати тобі, яким може бути справжній ФАРШ-бургер.
+        </p>
+        <h4>
+          Ми прагнемо:
+        </h4>
+        <ul>
+          <li>Розширювати гастрономічні горизонти день за днем;</li>
+          <li> Змінювати індустрію доставки їжі в сторону чесності та простоти;</li>
+          <li> Бути надійним другом для кожного клієнта.</li>
+        </ul>
+        <div class="about-button-wrapper">
+          <a [routerLink]="[ '/about']" routerLinkActive="active" class="about-button">більше про фарш</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-block3">
+    <div class="about-block3-main">
+      <h1>НАЙСМАЧНІШІ БУРГЕРИ У ЛЬВОВІ</h1>
+      <p class="about-block-maintext">
+        Обожнюєте ласувати смачненьким, але не любите готувати? Хочете насолодитися найкращими бургерами з соковитою
+        котлетою та найсвіжішими овочами, але часу куховарити завжди не вистачає? На щастя, вихід є ― доставка бургерів
+        Львів!
+      </p>
+      <p class="about-block-maintext">
+        Наші бургери ― це справжній витвір кулінарного мистецтва. Ми використовуємо високоякісні інгредієнти, а також
+        дотримуємося класичних рецептів, щоб Ви могли насолоджуватися автентичним смаком.
+      </p>
+      <div class="about-button-wrapper">
+        <button (click)="showTextAbout()" class="show-button">дізнатися більше</button>
+      </div>
+      <div *ngIf="hidden" class="hidden">
+        <div class="hidden-text">
+          <h2>ВІДБІРНІ ІНГРЕДІЄНТИ ТА АВТЕНТИЧНІ РЕЦЕПТИ</h2>
+          <p class="hidden-maintext">Якщо Вам набридли бургери у Львові з фаст фуд ресторанів, саме час замовити
+            доставку їжі у нас. Чи знаєте Ви, що згідно з оригінальною рецептурою, котлета повинна бути зроблена тільки
+            з яловичого фаршу? Спеціальна методика її приготування та обсмажування, а також правильно підібрані спеції,
+            які підкреслюють смак м’яса, дозволяють створити унікальні бургери, які точно сподобаються кожному.</p>
+          <p class="hidden-maintext">Чи чули Ви коли-небудь про джем з бекону? Якщо ні, тоді Вам просто необхідно
+            замовити у нас бургери у Львові доставка здійснюється за найкоротший час! Обсмажені шматочки бекону,
+            перемішані з відбірними приправами, надають котлетам соковитості та безлічі гастрономічних відтінків.</p>
+          <p class="hidden-maintext">Ми знаємо, що серед наших клієнтів є люди, які не вживають м’яса. Саме тому, в меню
+            можна знайти вегетаріанські бургери. Котлета Beyond Meat для них виготовляється з продуктів рослинного
+            походження, але це ніяк не впливає на її смакові якості. Ми руйнуємо застарілі стереотипи про те, що
+            вегетаріанська їжа не смакує.</p>
+          <p class="hidden-maintext">Спробуйте наш рослинний бургер Львів “З майбутнього” і піднесіться на сьоме небо
+            від насолоди. Що ще повинно входити у склад ідеального бургера, окрім котлети? Звичайно ж, це хрустка
+            булочка з найкращого борошна, сир, овочі та гриби. Важливо, щоб компоненти були підібрані правильно та у
+            відповідній пропорції. Наші кухарі знають, як поєднати всі інгредієнти так, щоб створити найкращі Львів
+            бургери, які принесуть задоволення кожному.</p>
+          <p class="hidden-maintext">Що може зробити бургер ще смачнішим? Звичайно ж, це ретельно підібрані соуси. Ми
+            пропонуємо найширший вибір соусів, які допомагають підкреслити смак котлети та інших інгредієнтів, а також
+            надають їм нових відтінків.</p>
+        </div>
+
+        <div class="hidden-text">
+          <h2>БАГАТЕ МЕНЮ, ДОСТУПНІ ЦІНИ ТА ДОСТАВКА ВСЬОГО ЗА 39 ХВИЛИН!</h2>
+          <p class="hidden-maintext">Хрустка булочка, розплавлений сир, соковита котлета, мариновані огірочки,
+            карамелізована цибулька… Зізнайтесь, у Вас уже прокинувся апетит! У нашому асортименті ви знайдете безліч
+            видів бургерів, а також сети для вечірок чи обіду у компанії друзів і колег. Бургери доставка у Львові яких
+            здійснюється всього за 39 хвилин, принесуть Вам справжнє гастрономічне задоволення!.</p>
+        </div>
+        <div class="about-button-wrapper">
+          <button (click)="hideThemAll()" class="show-button">згорнути назад</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--  -->
+<!-- Instagram section -->
+<div class="instagram-section">
+  <div class="instagram-section-spacer"></div>
+  <div class="instagram-section-maincontent">
+    <div class="sector">
+      <div class="block-cont">
+        <div class="titles">
+          <div class="subTitle">ШУКАЙ ІСТИНУ У ФАРШУ</div>
+          <div class="title-spacer"></div>
+          <div>
+            <span class="main-tittle-inst">стеж за</span>
+            <span class="main-tittle-inst">фаршем</span>
+          </div>
+          <div class="title-spacer"></div>
+          <div class="insta-link-wrapper">
+            <a class="insta-link" href="https://www.instagram.com/farsh.in.ua/">@farsh.in.ua</a>
+          </div>
+        </div>
+      </div>
+      <div class="block-cont-1">
+
+
+        <div class="block-cont-2">
+
+          <div class="block-cont-3">
+            <div class="item1"></div>
+            <div class="item1"></div>
+
+          </div>
+          <div class="block-cont-3">
+            <div class="item1"></div>
+            <div class="itemIMG"></div>
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="block-cont-img"></div>
+      </div>
+    </div>
+    <div class="sector">
+      <div class="box box-item1"></div>
+      <div class="box">
+        <div class="medium-box">
+          <div class="small-box "></div>
+          <div class="small-box notempty"></div>
+        </div>
+        <div class="medium-box-spacer"></div>
+        <div class="medium-box">
+          <div class="small-box notempty2 "></div>
+          <div class="small-box"></div>
+        </div>
+      </div>
+      <div class="box box-item2"></div>
+      <div class="box">
+        <div class="medium-box">
+          <div class="small-box notempty3"></div>
+          <div class="small-box notempty4"></div>
+        </div>
+        <div class="medium-box-spacer"></div>
+        <div class="medium-box">
+          <div class="small-box"></div>
+          <div class="small-box notempty5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="instagram-section-spacer"></div>
+</div>

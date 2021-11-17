@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./career.component.scss']
 })
 export class CareerComponent implements OnInit {
-
+  hiddenText = false;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  showDetails(){
+    this.hiddenText = !this.hiddenText;
+  }
 }

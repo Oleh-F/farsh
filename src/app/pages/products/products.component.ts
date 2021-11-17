@@ -9,6 +9,7 @@ import { ProductService } from 'src/app/shared/services/product/product.service'
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
+
 export class ProductsComponent implements OnInit {
 
   products: Array<IProduct> = [];

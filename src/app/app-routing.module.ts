@@ -23,6 +23,11 @@ import { AdminCategoryComponent } from './admin/admin-category/admin-category.co
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
 import { AdminDiscountComponent } from './admin/admin-discount/admin-discount.component';
+import { LoginComponent } from './pages/login/login.component';
+import { OrderHistoryComponent } from './pages/order-history/order-history.component';
+
+import { PointsComponent } from './pages/points/points.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -40,6 +45,10 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactsComponent},
   {path: 'basketDetails', component: BasketDetailsComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'order-history', component: OrderHistoryComponent},
+  
+  {path: 'points', component: PointsComponent},
   {path: 'admin', component: AdminComponent, children: [
     {path: '', pathMatch: 'full', redirectTo: 'discount'},
     {path: 'discount', component: AdminDiscountComponent},

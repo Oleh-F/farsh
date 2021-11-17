@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  hidden = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  showTextAbout(){
+    this.hidden = !this.hidden;
+  }
+  hideThemAll(){
+    this.hidden =!this.hidden;
   }
 
 }

@@ -1,1 +1,145 @@
-<p>basket works!</p>
+<main class="container">
+  <div>
+    <div class="spacer90"></div>
+    <div class="mainTitleWrapper">
+      <span class="mainTitle1">не телефонуємо -</span>
+      <span class="mainTitle1">миттєво готуємо</span>
+    </div>
+    <div class="spacer70"></div>
+  </div>
+  <div [formGroup]="orderForm" class="makeOrederForm">
+    <div class="l-order">
+      <div class="block1">
+        <div class="orderListTitle">
+          <span>Моє замовлення</span>
+
+        </div>
+        <div *ngFor="let order of basket" class="orderlist">
+          <table>
+            <tbody class="container container-fluid">
+              <tr class="container-fluid">
+                <td>
+                    <img [src]="order.image" width="80px" alt="">
+                </td>
+                <td>{{order.name}}</td>
+                <td>{{order.price}}</td>
+                <td>
+                  <div class="count">
+                    <button class="btnSmall">-</button>
+                    <input class="countText" type="text" placeholder="{{order.count}}">
+                    <button class="btnSmall">+</button>
+                  </div>
+                </td>
+                <td>{{order.count * order.price}}</td>
+                <td>
+                  <button (click)="removeProduct(order)" class="btn">X</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="block1">
+        <div class="orderListTitle">
+          <span>Спосіб оплати</span>
+
+        </div>
+        <div class="payment">
+            <label>
+                <input class="typeOfPay"  type="checkbox" checked="checked" name="payment-type">Онлайн оплата
+                <input class="typeOfPay-1" type="checkbox"  name="payment-type">Готівкою
+                <input class="typeOfPay-1" type="checkbox"  name="payment-type">Кур'єр з терміналом
+            </label>
+        </div>
+        <div class="callMe">
+          <input class="typeOfPay" type="checkbox">Перетелефонуйте мені для підтвердження замовлення
+        </div>
+        <div class="subjectsInfo">
+          <div>
+            <span>Одноразові предмети (число персон)</span>
+          </div>
+          <div class="count">
+            <button class="btnSmall">-</button>
+            <input class="countText" type="text">
+            <button class="btnSmall">+</button>
+          </div>
+        </div>
+        <div class="spacer30"></div>
+        <div class="block1">
+          <textarea formControlName = "userComment" placeholder="Коментар/промокод/одноразові предмети" class="textArea"></textarea>
+        </div>
+        <div>
+          <div class="spacer30"></div>
+          <div class="spacer30"></div>
+        </div>
+        <div class="l-orderBottom">
+            <div class="smallText"><span class="smallText">До сплати:</span><span class="smallText1"> {{ totalPrice }} грн</span>
+            </div>
+            <div class="orderButtons">
+              <a (click)="addOrder()" routerLinkActive="active" class="simpleOrder">ОФОРМИТИ
+                ЗАМОВЛЕННЯ</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <div  class="r-order">
+      <div class="block1">
+        <div class="orderListTitle">
+          <span>Спосіб доставки</span>
+        </div>
+        <div class="payment">
+          <input class="typeOfPay" name="check" checked="cheched" type="checkbox">Доставка кур'єром
+          <input class="typeOfPay-1" name="check" type="checkbox">Самовивіз
+          <input class="typeOfPay-1" name="check" type="checkbox">Замовити заздвлегідь
+        </div>
+        <div class="spacer30"></div>
+        <div class="minimumCost">
+          <div class="mainTextAboutDelivery">
+            <div>
+              <span>Безкоштовна доставка від <strong>299.00 грн</strong></span>
+            </div>
+            <div class="cost">
+              <div class="costLine"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer30"></div>
+      <div class="userBlock">
+        <div>
+          <input formControlName = "userName" class="infoUser" placeholder="Ваше ім'я*" type="text">
+        </div>
+        <div>
+          <input formControlName = "userPhone" class="infoUser" placeholder="Номер телефону" type="text">
+        </div>
+      </div>
+      <div class="spacer30"></div>
+      <div class="userBlock">
+
+        <div>
+          <input formControlName = "userStreet" class="infoUser1" placeholder="Вкажіть адресу доставки" type="text">
+        </div>
+        <div>
+          <input formControlName = "userHouse" class="infoUser1" placeholder="Номер будинку*" type="text">
+        </div>
+        <div>
+          <input  formControlName = "userNumber" class="infoUser1" placeholder="Номер квартири" type="text">
+        </div>
+
+      </div>
+      <div class="spacer30"></div>
+      <div class="adress-block">
+        <div class="orderListTitle">
+          <span>Адреса</span>
+        </div>
+        <div class="adress_map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.7393635798917!2d23.979995669834892!3d49.822843467874556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7f3c0420af7%3A0xbb559997164d8320!2sDostavka%20Burheriv%20%22Farsh%22!5e0!3m2!1sru!2sua!4v1628970393262!5m2!1sru!2sua"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="spacer70"></div>

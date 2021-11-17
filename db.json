@@ -115,7 +115,95 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2F6-1200x800-1-e1619532954724.jpg?alt=media&token=c961bc50-b4c1-4da1-8a76-6e9c6b43338e",
       "count": 1,
       "id": 4
+    },
+    {
+      "category": {
+        "name": "бургери",
+        "path": "burgers",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fburger.svg?alt=media&token=4e8d879f-5804-49ec-ae7d-97e18cfd5ac0",
+        "id": 2
+      },
+      "name": "фарш_office сет",
+      "path": "burgers",
+      "description": "Дикий Фарш для диких ідей, Грибний Фантазер для нових фантазій, Таневроті для насолоди, 2 картоплі, 2 соуси, +1л коли в подарунок!",
+      "weight": "1400 гр",
+      "price": 699,
+      "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Foffis-set-2-e1604159252995.png?alt=media&token=345b1e5b-08ea-4b39-8da8-aa19c01486a7",
+      "count": 1,
+      "id": 5
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "userName": "олег",
+      "userPhone": "413125103",
+      "userNumber": "20",
+      "userStreet": "франка",
+      "userHouse": "20",
+      "userComment": "комент",
+      "products": [
+        {
+          "category": {
+            "name": "бургери",
+            "path": "burgers",
+            "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fburger.svg?alt=media&token=4e8d879f-5804-49ec-ae7d-97e18cfd5ac0",
+            "id": 2
+          },
+          "name": "фарш_office сет",
+          "path": "burgers",
+          "description": "Дикий Фарш для диких ідей, Грибний Фантазер для нових фантазій, Таневроті для насолоди, 2 картоплі, 2 соуси, +1л коли в подарунок!",
+          "weight": "1400 гр",
+          "price": 699,
+          "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Foffis-set-2-e1604159252995.png?alt=media&token=345b1e5b-08ea-4b39-8da8-aa19c01486a7",
+          "count": 2,
+          "id": 5
+        },
+        {
+          "category": {
+            "name": "закуски",
+            "path": "snacs",
+            "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fsnacks.svg?alt=media&token=0c51255f-af32-445a-8106-4f59e8da5595",
+            "id": 3
+          },
+          "name": "ЗАЧЬОТНІ КРИЛЬЦЯ 5ШТ",
+          "path": "product/zachotni-kryla-5sht",
+          "description": "5 ніжних соковитих крилець власного приготування обняті в медово-гірчичному соусі",
+          "weight": "60",
+          "price": 109,
+          "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2FWFS_0458-e1626721198359.png?alt=media&token=fc116375-9a4f-4092-a3b3-1872066ad2be",
+          "count": 2,
+          "id": 2
+        },
+        {
+          "category": {
+            "name": "кебаб",
+            "path": "kebab",
+            "icon": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fkebab.svg?alt=media&token=2ba6e2f7-8cb4-4661-9d48-4db01e8559ad",
+            "id": 1
+          },
+          "name": "Сет з кебабів L",
+          "path": "set-kebabiv-l",
+          "description": "3 кебаби L +дві різні картоплі + соус кетчуп + 1л Коли в подарок",
+          "weight": "1500",
+          "price": 429,
+          "image": "https://firebasestorage.googleapis.com/v0/b/farsh-burgers.appspot.com/o/images%2Fset-kebabiv-e1626783215574.jpg?alt=media&token=35b54f11-f076-4216-a104-24f70983c7d8",
+          "count": 1,
+          "id": 1
+        }
+      ],
+      "totalPrice": 2045,
+      "id": 1
+    },
+    {
+      "userName": "олег",
+      "userPhone": "413125103",
+      "userNumber": "20",
+      "userStreet": "франка",
+      "userHouse": "20",
+      "userComment": "комент",
+      "products": [],
+      "totalPrice": 2045,
+      "id": 2
+    }
+  ]
 }
