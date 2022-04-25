@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
 export class LoginComponent implements OnInit {
   public registerForm!: FormGroup;
   public loginForm!: FormGroup;
-  
+  public formChecker =true;
 
 
   constructor(
@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.initRegisterForm();
+    this.initLoginForm();
   }
 
   initRegisterForm(): void {
@@ -34,6 +35,14 @@ export class LoginComponent implements OnInit {
       password: [null, Validators.required]
     })
   }
+  initLoginForm(): void {
+    this.loginForm = this.fb.group({
+
+      email: [null, [Validators.required, Validators.email]],
+      password: [null, Validators.required]
+    })
+  }
+
 
   register(): void {
     const { email, password } = this.registerForm.value;
@@ -53,6 +62,7 @@ export class LoginComponent implements OnInit {
           .then(() => {
             this.toastr.success('User register successfully', '');
             this.registerForm.reset();
+            this.formChecker = !this.formChecker;
           })
           .catch(err => {
             this.toastr.error(err.massage, err.title);
@@ -64,29 +74,34 @@ export class LoginComponent implements OnInit {
       })
 
   }
-  // login(): void {
-  //   const { email, password } = this.loginForm.value;
-  //   this.auth.signInWithEmailAndPassword(email, password)
-  //     .then(userCredential => {
-  //       this.db.collection("users").doc(userCredential.user?.uid).ref.get()
-  //         .then(doc => {
-  //           if (doc.exists) {
-  //             const user = {
-  //               id: doc.id,
-  //               ...doc.data() as any
-  //             };
-  //             localStorage.setItem('user', JSON.stringify(user));
-  //             this.toastr.success(`Welcome user`);
-  //           }
-  //         })
-  //         .catch(err => {
-  //           this.toastr.error(err.message, err.title);
-  //         })
-  //     })
-  //     .catch(err => {
-  //       this.toastr.error(err.message, err.title);
-  //     })
-  // }
+
+  switchForm():void{
+    this.formChecker = !this.formChecker;
+  }
+
+  login(): void {
+    const { email, password } = this.loginForm.value;
+    this.auth.signInWithEmailAndPassword(email, password)
+      .then(userCredential => {
+        this.db.collection('users').doc(userCredential.user?.uid).ref.get()
+          .then(doc => {
+            if (doc.exists) {
+              const user = {
+                id: doc.id,
+                ...doc.data() as any
+              };
+              localStorage.setItem('user', JSON.stringify(user));
+              this.toastr.success(`Welcome user`);
+            }
+          })
+          .catch(err => {
+            this.toastr.error(err.message, err.title);
+          })
+      })
+      .catch(err => {
+        this.toastr.error(err.message, err.title);
+      })
+  }
 
 
 

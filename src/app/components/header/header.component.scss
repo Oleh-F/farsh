@@ -3,16 +3,16 @@
     background-image: url('https://farsh.in.ua/wp-content/themes/farsh/img/dark-wall-02.jpg')
 }
 
-.header-left{
+.header-right{
     width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.nav-item {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+// .nav-item {
+//     margin-left: 10px;
+//     margin-right: 10px;
+// }
 
 .menu-item{
     
@@ -54,12 +54,10 @@ display: flex;
     text-decoration: none;
     color: black;
     z-index: 1;
-    // padding-top: -500px;
     width: 40%;
     height: 100%;
     transition: right 2s;
     background-color: rgb(241, 239, 239);
-    // background-color: rgb(160, 144, 144);
     position: fixed;
     top: 0px;
     right: 0;
@@ -85,17 +83,13 @@ display: flex;
     display: flex;
     justify-content: space-between;
 }
-// .hideMenuButton{
-    
-//     justify-content: space-around;
-// }
+
 .main{
     display: flex;
 
 }
 .snacIcon{
     margin-right: 10px;
-    
     display: block;
     color: white; 
     width: 30px;
@@ -112,7 +106,6 @@ display: flex;
     margin-right: 15px;
     margin-left: 10px;
     display: block;
-    
     width: 30px;
     height: 30px;
     
@@ -120,7 +113,6 @@ display: flex;
 .cencelButton{
     width: 40px;
     height: 40px;
-    // background-color: black;
 }
 
 ////////busket//////
@@ -128,7 +120,6 @@ display: flex;
     text-decoration: none;
     color: black;
     z-index: 1;
-    // padding-top: -500px;
     width: 50%;
     height: 100%;
     transition: right 2s;
@@ -195,4 +186,44 @@ display: flex;
 }
 .item1{
     padding-right: 20px;
+    
+}
+
+
+
+// ////////////////////////////////////////////
+    
+    @media screen and (max-width:1198px) {
+    .collapse{
+        display: none;
+    }
+    .hiddenMenu{
+        text-decoration: none;
+        color: black;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        transition: right 2s;
+        background-color: rgb(241, 239, 239);
+        position: fixed;
+        top: 0px;
+        right: 0;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 20px;   
+    }
+    .hiddenBasket{
+        text-decoration: none;
+        color: black;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        transition: right 2s;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        padding-top: 20px;
+    }
+    
 }

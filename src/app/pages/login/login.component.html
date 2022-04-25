@@ -23,32 +23,61 @@
     </div>
 
   </div>
-  <div  class="info-block">
+  <div class="info-block">
 
     <div class="form1">
       <h5>1. Особисті дані</h5>
     </div>
-    <form [formGroup]="registerForm" (ngSubmit)="register()">
-      <!-- <div class="user-info-1">
-        <input formControlName="firstName" class="user" placeholder="*Ваше ім'я" type="text">
-        <input formControlName="secondName" class="user" placeholder="*Ваше прізвище" type="text">
-      </div> -->
-      <div  class="user-info-2">
-        <input formControlName="email"  data-validate = "Valid email is required: ex@abc.xyz" class="user-email" placeholder="*Ваш email" type="text">
+    <form *ngIf="!formChecker" [formGroup]="registerForm" (ngSubmit)="register()">
+      <div class="user-info-2">
+        <input formControlName="email" data-validate="Valid email is required: ex@abc.xyz" class="user-email"
+          placeholder="*Ваш email" type="text">
       </div>
       <div class="user-info-2">
         <input formControlName="password" class="user-number" placeholder="*Ваш пароль" type="password">
       </div>
 
-      <div class="buttons">
-        <button [disabled]="registerForm.invalid"   class="button-save" type="submit">Зберегти</button>
-        <div class="button-exit1">
-          <a class="button-exit" [routerLink]="[ '/home']">Вихід</a>
-
+      <div class="buttons-line">
+        <div class="buttons">
+          <button [disabled]="registerForm.invalid" class="button-save" type="submit">Зберегти</button>
+          <div class="button-exit1">
+            <a class="button-exit" [routerLink]="[ '/home']">Вихід</a>
+          </div>
         </div>
-
+        <div>
+          <div class="spacer10"></div>
+          <a class="txt2" (click)="switchForm()">
+            Already have an account?
+          </a>
+        </div>
       </div>
     </form>
+
+    <form *ngIf="formChecker" [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="user-info-2">
+        <input formControlName="email" data-validate="Valid email is required: ex@abc.xyz" class="user-email"
+          placeholder="*Ваш email" type="text">
+      </div>
+      <div class="user-info-2">
+        <input formControlName="password" class="user-number" placeholder="*Ваш пароль" type="password">
+      </div>
+
+      <div>
+        <div class="buttons">
+          <button [disabled]="loginForm.invalid" class="button-save" type="submit">Увійти</button>
+          <div class="button-exit1">
+            <a class="button-exit" [routerLink]="[ '/home']">Вихід</a>
+          </div>
+        </div>
+        <div>
+          <div class="spacer10"></div>
+          <a class="txt2" (click)="switchForm()">
+            Don't have an account?
+          </a>
+        </div>
+      </div>
+    </form>
+
     <div class="spacer50"></div>
 
   </div>

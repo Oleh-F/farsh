@@ -63,22 +63,24 @@
       </div>
 
       <!-- ///////// -->
-      <div class="header-left">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+      <div class="header-right">
+
+
+        <div class="navbar-nav conteiner-fluid me-auto mb-2 mb-lg-0">
+        
+          <div >
             <a routerLinkActive="active" class="nav-link">
               <img src="https://farsh.in.ua/wp-content/uploads/2020/02/icon-phone.svg" alt="">+38 (068) 302 20 20</a>
-          </li>
-          <li (click)="showBasket()" class="nav-item">
+          </div>
+          <div (click)="showBasket()" >
             <a routerLinkActive="active" class="nav-link">
-              <!-- <a [routerLink]="[ '/basketDetails']" routerLinkActive="active" class="nav-link"> -->
               <img src="https://farsh.in.ua/wp-content/themes/farsh/img/icon-basket.svg" alt=""> {{ totalPrice }} грн
             </a>
-          </li>
-          <li class="nav-item">
+          </div>
+          <div >
             <a [routerLink]="[ '/login']" routerLinkActive="active" class="nav-link">Увійти</a>
-          </li>
-        </ul>
+          </div>
+        </div>
         <div>
           <button (click)="showMenu()" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -179,20 +181,20 @@
       <table>
         <tbody>
           <tr class="align-middle" *ngFor="let prod of headerBasket;">
-            
 
-              <td class="item1">
-                <img [src]="prod.image" width="80px" alt="">
-              </td>
-              
-              <td class="item1">{{ prod.name }}</td>
-              <td class="item1">{{ prod.weight }}гр</td>
-              <td class="item1">{{ prod.count * prod.price }}грн</td>
-              <td>
-                <button (click)="removeProduct(prod)" class="btn btn-danger">delete</button>
-              </td>
-              
-            
+
+            <td class="item1">
+              <img [src]="prod.image" width="80px" alt="">
+            </td>
+
+            <td class="item1">{{ prod.name }}</td>
+            <td class="item1">{{ prod.weight }}гр</td>
+            <td class="item1">{{ prod.count * prod.price }}грн</td>
+            <td>
+              <button (click)="removeProduct(prod)" class="btn btn-danger">delete</button>
+            </td>
+
+
           </tr>
 
         </tbody>
@@ -201,71 +203,17 @@
   </div>
   <div class="bottomOfList">
     <div class="wrapperBottomOfList">
-      <div class="smallText"><span class="smallText">До сплати:</span><span class="smallText1"> {{ totalPrice }} грн</span></div>
+      <div class="smallText"><span class="smallText">До сплати:</span><span class="smallText1"> {{ totalPrice }}
+          грн</span></div>
       <div class="orderButtons">
         <div class="fastOrder">
           швидко замовити
         </div>
         <div class="buttonN1">
-              <a (click)="hideBasket()" [routerLink]="[ '/basket']" routerLinkActive="active" class="simpleOrder">ОФОРМИТИ
+          <a (click)="hideBasket()" [routerLink]="[ '/basket']" routerLinkActive="active" class="simpleOrder">ОФОРМИТИ
             ЗАМОВЛЕННЯ</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-<!-- class="container-fluid visible" -->
-<!-- 
-  <div class="container-fluid">
-    <button class=" navbar navbar-light bg-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-</div> -->
-
-
-<!-- <nav class="navbar navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-      <a class="navbar-brand" href="#">Offcanvas navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </nav> -->
